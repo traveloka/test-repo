@@ -1,0 +1,58 @@
+extends layout
+
+block content
+  // /#left-panel
+  // Left Panel
+  // Right Panel
+  #right-panel.right-panel
+    // Header
+    header#header.header
+      .top-left
+        .navbar-header
+          a.navbar-brand(href="./")
+            i.swg.swg-wookie.swg-2x
+          a#menuToggle.menutoggle
+            i.fa.fa-bars
+      .top-right
+        .header-menu
+          .header-left
+            button.search-trigger
+              i.fa.fa-search
+            .form-inline
+              form.search-form
+                input.form-control.mr-sm-2(type="text" placeholder="Search ..." aria-label="Search")
+                button.search-close(type="submit")
+                  i.fa.fa-close
+    // /header
+    // Header
+    .content.pb-0
+      .row
+        .col-lg-12.col-md-12  
+          .card
+            .card-body-- 
+              .title
+                | TOSS
+                p Traveloka Open Security Scanner
+              .row
+                .col-md-12
+                  p.text
+                    | TOSS is a an open source project to report vulnerabilities in Javascript,
+                    | Python and Java files. It is built using Node.js and uses Retire.js
+                    | for scanning all Javascript files. All dependencies are checked for
+                    | vulnerabilities using data from NVD. This project also has git
+                    | intergration.
+                  .link Coming soon:
+                  ul.link
+                    li Support for Java, Python.
+                    li User input for git repositories.
+                  p.link Hilal Lone: hilal.lone@traveloka.com | Hilal@slack
+                  p.link Imran Manzoor: imran.manzoor@traveloka.com | imanzoor@slack
+
+    // .content
+    .clearfix
+    footer.site-footer
+      .footer-inner.bg-white
+        .row
+  // /#right-panel
+  script(src="/javascripts/js/plugins.js")
+  script(src="/javascripts/js/main.js")
